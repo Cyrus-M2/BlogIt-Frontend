@@ -1,6 +1,6 @@
 import axios from "./axios";
 
-export const register = (data: any) => axios.post("api/auth/register", data);
+export const register = (data: any) => axios.post("auth/register", data);
 export const login = (data: { emailOrUsername: string; password: string }) =>
-  axios.post("api/auth/login", data);
-export const logout = () => axios.post("api/auth/logout");
+  axios.post("auth/login", data);
+export const logout = () => axios.post("auth/logout");
